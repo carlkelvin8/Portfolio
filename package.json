@@ -13,18 +13,18 @@
     "@mantine/core": "^7.3.2",
     "@mantine/hooks": "^7.3.2",
     "@tabler/icons-react": "^2.44.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "framer-motion": "^12.34.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^10.0.3",
     "react-particles": "^2.12.2",
     "react-scroll": "^1.8.10",
-    "tsparticles": "^3.9.1"
+    "tsparticles": "^3.9.1",
+    "vite": "^5.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.8"
+    "@types/react-dom": "^18.2.17"
   }
 }
