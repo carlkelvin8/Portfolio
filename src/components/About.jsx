@@ -85,24 +85,6 @@ function About() {
           </Card>
         </SimpleGrid>
 
-        {/* DEVS100 Membership Card */}
-        <Box mb={60} style={{ display: 'flex', justifyContent: 'center' }}>
-          <Card className="devs100-card" padding="lg" radius="lg" style={{ maxWidth: '280px', width: '100%' }}>
-            <Stack align="center" gap="md">
-              <Badge size="md" variant="gradient" gradient={{ from: 'indigo', to: 'violet' }} radius="sm">
-                DEVS100 Member
-              </Badge>
-              <iframe 
-                src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" 
-                width="100%" 
-                height="420" 
-                style={{ border: 0, borderRadius: '12px', overflow: 'hidden' }} 
-                title="DEVS100 Access Card"
-              />
-            </Stack>
-          </Card>
-        </Box>
-
         {/* Key Strengths */}
         <div>
           <Title order={3} size="h3" mb="xl" ta="center" className="strengths-title">
