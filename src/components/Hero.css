@@ -153,35 +153,41 @@
 
 /* Typography Enhancements */
 .hero-name-primary {
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 950;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 40%, #60a5fa 70%, #93c5fd 100%);
+  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 20%, #3b82f6 50%, #60a5fa 80%, #93c5fd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-size: 200% auto;
-  animation: fadeUp 0.8s ease-out 0.2s backwards, shimmer 3s linear infinite;
+  background-size: 300% auto;
+  animation: fadeUp 0.8s ease-out 0.2s backwards, shimmer 4s linear infinite;
   position: relative;
   text-transform: uppercase;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  text-shadow: 0 0 80px rgba(59, 130, 246, 0.5);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-stretch: 110%;
+  font-stretch: 115%;
   paint-order: stroke fill;
-  -webkit-text-stroke: 0.5px rgba(59, 130, 246, 0.3);
+  -webkit-text-stroke: 1.5px rgba(59, 130, 246, 0.4);
+  filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.3)) 
+          drop-shadow(0 8px 24px rgba(59, 130, 246, 0.2));
+  transform: scaleY(1.05);
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 1;
 }
 
 :root[data-mantine-color-scheme="dark"] .hero-name-primary {
-  background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 40%, #dbeafe 70%, #ffffff 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 25%, #93c5fd 50%, #dbeafe 75%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-size: 200% auto;
-  text-shadow: 0 0 80px rgba(147, 197, 253, 0.5);
-  -webkit-text-stroke: 0.5px rgba(147, 197, 253, 0.3);
+  background-size: 300% auto;
+  -webkit-text-stroke: 1.5px rgba(147, 197, 253, 0.5);
+  filter: drop-shadow(0 4px 16px rgba(147, 197, 253, 0.4)) 
+          drop-shadow(0 8px 32px rgba(147, 197, 253, 0.3))
+          drop-shadow(0 0 60px rgba(147, 197, 253, 0.2));
 }
 
 /* Shimmer animation */
@@ -190,7 +196,7 @@
     background-position: 0% center;
   }
   100% {
-    background-position: 200% center;
+    background-position: 300% center;
   }
 }
 
@@ -201,31 +207,34 @@
   left: 0;
   top: 0;
   z-index: -1;
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: blur(30px);
-  opacity: 0.4;
-  animation: pulse-glow 2s ease-in-out infinite;
+  filter: blur(40px);
+  opacity: 0.5;
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 :root[data-mantine-color-scheme="dark"] .hero-name-primary::before {
-  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  background: linear-gradient(135deg, #60a5fa, #93c5fd, #dbeafe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  opacity: 0.6;
+  opacity: 0.7;
+  filter: blur(50px);
 }
 
 @keyframes pulse-glow {
   0%, 100% {
-    opacity: 0.4;
-    filter: blur(30px);
+    opacity: 0.5;
+    filter: blur(40px);
+    transform: scale(1);
   }
   50% {
-    opacity: 0.6;
-    filter: blur(40px);
+    opacity: 0.8;
+    filter: blur(60px);
+    transform: scale(1.02);
   }
 }
 
