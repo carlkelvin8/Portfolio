@@ -1,5 +1,5 @@
-import { Container, Box, Card, Stack, Badge, Text } from '@mantine/core'
-import { IconShieldCheck } from '@tabler/icons-react'
+import { Container, Box, Card, Stack, Badge, Text, Group, ThemeIcon } from '@mantine/core'
+import { IconShieldCheck, IconUsers, IconCode, IconTrophy, IconStar } from '@tabler/icons-react'
 import './Devs100Card.css'
 
 /**
@@ -40,9 +40,25 @@ function Devs100Card() {
             </div>
           </Stack>
 
+          {/* Icons */}
+          <Group gap="lg" justify="center">
+            <ThemeIcon size={48} radius="md" variant="light" color="indigo">
+              <IconUsers size={24} />
+            </ThemeIcon>
+            <ThemeIcon size={48} radius="md" variant="light" color="violet">
+              <IconCode size={24} />
+            </ThemeIcon>
+            <ThemeIcon size={48} radius="md" variant="light" color="grape">
+              <IconTrophy size={24} />
+            </ThemeIcon>
+            <ThemeIcon size={48} radius="md" variant="light" color="pink">
+              <IconStar size={24} />
+            </ThemeIcon>
+          </Group>
+
           {/* Card */}
           <Stack align="center" gap="md">
-            <Card className="devs100-card-wrapper" padding={0} radius="xl">
+            <div className="devs100-card-wrapper">
               <iframe 
                 src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" 
                 width="260" 
@@ -50,7 +66,7 @@ function Devs100Card() {
                 style={{ border: 0, borderRadius: '20px', overflow: 'hidden', display: 'block', background: 'transparent' }} 
                 title="DEVS100 Access Card"
               />
-            </Card>
+            </div>
             <Text size="xs" c="dimmed" ta="center" maw={260}>
               Official member identification card
             </Text>
