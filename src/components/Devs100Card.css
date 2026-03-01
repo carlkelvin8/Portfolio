@@ -2,7 +2,7 @@
   background: transparent;
   position: relative;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 /* Decorative background */
@@ -40,6 +40,15 @@
   z-index: 1;
 }
 
+/* Icons */
+.devs100-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.devs100-icon:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
 /* Card Wrapper */
 .devs100-card-wrapper {
   background: transparent !important;
@@ -51,6 +60,7 @@
   box-shadow: none;
   animation: fadeUp 0.8s ease-out;
   padding: 0 !important;
+  border-radius: 20px;
 }
 
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper {
@@ -70,7 +80,15 @@
 
 .devs100-card-wrapper iframe {
   display: block;
-  background: transparent;
+  background: transparent !important;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Try to blend the iframe in dark mode */
+:root[data-mantine-color-scheme="dark"] .devs100-card-wrapper iframe {
+  mix-blend-mode: lighten;
+  opacity: 0.95;
 }
 
 @keyframes fadeUp {
@@ -87,25 +105,31 @@
 /* Responsive */
 @media (max-width: 768px) {
   .devs100-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   
   .devs100-card-wrapper {
-    padding: 1.5rem !important;
+    padding: 0;
+  }
+  
+  .devs100-icon {
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
 @media (max-width: 576px) {
   .devs100-section {
-    padding: 1.5rem 0;
-  }
-  
-  .devs100-card-wrapper {
-    padding: 1rem !important;
+    padding: 0.5rem 0;
   }
   
   .devs100-card-wrapper iframe {
     width: 240px !important;
     height: 380px !important;
+  }
+  
+  .devs100-icon {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
