@@ -29,12 +29,12 @@ function Devs100Card() {
           </Stack>
 
           {/* Card */}
-          <Card className="devs100-card-wrapper" padding="xl" radius="xl">
+          <Card className="devs100-card-wrapper" padding={0} radius="xl">
             <iframe 
               src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" 
               width="260" 
               height="420" 
-              style={{ border: 0, borderRadius: '16px', overflow: 'hidden', display: 'block' }} 
+              style={{ border: 0, borderRadius: '20px', overflow: 'hidden', display: 'block', background: 'transparent' }} 
               title="DEVS100 Access Card"
             />
           </Card>
