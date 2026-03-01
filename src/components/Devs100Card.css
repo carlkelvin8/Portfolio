@@ -63,10 +63,23 @@
   border-radius: 20px;
 }
 
+.devs100-card-wrapper img {
+  display: block;
+  background: transparent !important;
+  border-radius: 20px;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper {
   background: transparent !important;
   border: none;
   box-shadow: none;
+}
+
+:root[data-mantine-color-scheme="dark"] .devs100-card-wrapper img {
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
 }
 
 .devs100-card-wrapper:hover {
