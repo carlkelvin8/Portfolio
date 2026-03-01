@@ -2,6 +2,7 @@
   background: transparent;
   position: relative;
   overflow: hidden;
+  padding: 2rem 0;
 }
 
 /* Decorative background */
@@ -11,8 +12,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
@@ -117,7 +118,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .devs100-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   
   .devs100-card-wrapper {
@@ -127,7 +128,7 @@
 
 @media (max-width: 576px) {
   .devs100-section {
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
   }
   
   .devs100-card-wrapper {
