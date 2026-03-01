@@ -51,7 +51,7 @@
 
 /* Card Wrapper */
 .devs100-card-wrapper {
-  background: transparent !important;
+  background: #f8f9fa !important;
   backdrop-filter: none;
   border: none;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,18 +68,16 @@
   background: transparent !important;
   border-radius: 20px;
   overflow: hidden;
-  mix-blend-mode: multiply;
 }
 
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper {
-  background: transparent !important;
+  background: #1a1b1e !important;
   border: none;
   box-shadow: none;
 }
 
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper img {
-  mix-blend-mode: screen;
-  filter: brightness(1.1);
+  background: transparent !important;
 }
 
 .devs100-card-wrapper:hover {
