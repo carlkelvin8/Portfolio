@@ -51,33 +51,37 @@
 
 /* Card Wrapper */
 .devs100-card-wrapper {
-  background: #f8f9fa !important;
+  background: transparent !important;
   backdrop-filter: none;
   border: none;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  overflow: visible;
-  box-shadow: none;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   animation: fadeUp 0.8s ease-out;
   padding: 0 !important;
   border-radius: 20px;
+  width: 260px;
+  height: 420px;
 }
 
 .devs100-card-wrapper img {
   display: block;
-  background: transparent !important;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  overflow: hidden;
+  object-fit: cover;
+  filter: drop-shadow(0 4px 20px rgba(99, 102, 241, 0.3));
 }
 
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper {
-  background: #1a1b1e !important;
-  border: none;
-  box-shadow: none;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 :root[data-mantine-color-scheme="dark"] .devs100-card-wrapper img {
-  background: transparent !important;
+  filter: drop-shadow(0 4px 20px rgba(99, 102, 241, 0.5));
 }
 
 .devs100-card-wrapper:hover {

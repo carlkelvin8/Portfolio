@@ -60,12 +60,16 @@ function Devs100Card() {
           {/* Right Side - Card */}
           <Stack align="center" gap="sm" style={{ flex: '0 0 auto' }}>
             <div className="devs100-card-wrapper">
-              <iframe 
-                src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" 
-                width="260" 
-                height="420" 
-                style={{ border: 0, borderRadius: '16px', overflow: 'hidden' }} 
-                title="DEVS100 Access Card"
+              <img 
+                src="/card.png" 
+                alt="DEVS100 Access Card - Carl Kelvin Manahan"
+                style={{ 
+                  width: '260px', 
+                  height: '420px', 
+                  borderRadius: '20px', 
+                  display: 'block',
+                  objectFit: 'cover'
+                }} 
               />
             </div>
             <Text size="xs" c="dimmed" ta="center" maw={260}>
