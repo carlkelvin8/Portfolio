@@ -60,13 +60,7 @@ function Devs100Card() {
           {/* Right Side - Card */}
           <Stack align="center" gap="sm" style={{ flex: '0 0 auto' }}>
             <div className="devs100-card-wrapper">
-              <iframe 
-                src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" 
-                width="260" 
-                height="420" 
-                style={{ border: 0, borderRadius: '20px', overflow: 'hidden', display: 'block', background: 'transparent' }} 
-                title="DEVS100 Access Card"
-              />
+              <iframe src="https://www.devs100.com/access-card/embed?name=Carl%20Kelvin%20Manahan" width="260" height="420" style="border:0;border-radius:16px;overflow:hidden;" title="DEVS100 Access Card"></iframe>
             </div>
             <Text size="xs" c="dimmed" ta="center" maw={260}>
               Official member identification card
