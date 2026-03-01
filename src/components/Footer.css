@@ -1,0 +1,45 @@
+.footer {
+  background: transparent;
+  color: var(--text-primary);
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-navy);
+}
+
+:root[data-mantine-color-scheme="dark"] .footer {
+  background: transparent;
+  color: var(--text-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+  background: linear-gradient(135deg, #5368c2 0%, #7da4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-link {
+  transition: color 200ms ease;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--mantine-color-blue-4);
+}
+
+.footer-heart {
+  color: #ff6b6b;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

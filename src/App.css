@@ -1,0 +1,115 @@
+:root {
+  /* Light Mode Defaults - Clean & Crisp */
+  --bg-navy: #ffffff;
+  --bg-card-navy: #f7f9fc;
+  --border-navy: rgba(0, 0, 0, 0.06);
+  --text-primary: #0a192f; /* Deep Navy Blue */
+  --text-secondary: #334155; /* Slate 700 - Dark Blue Grey */
+  --accent-primary: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.05);
+}
+
+:root[data-mantine-color-scheme="dark"] {
+  /* Premium SaaS Dark Theme - Deep & Rich */
+  --mantine-color-body: #030712; /* Gray 950 - almost black */
+  --mantine-color-text: #f8fafc; /* Gray 50 */
+  
+  --bg-navy: #030712; 
+  --bg-card-navy: #0f172a; /* Slate 900 */
+  --border-navy: rgba(255, 255, 255, 0.08);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8; /* Slate 400 */
+  
+  --accent-primary: #3b82f6; /* Blue 500 */
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  
+  --glass-bg: rgba(3, 7, 18, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: var(--bg-navy);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-navy);
+}
+
+main {
+  flex: 1;
+}
+
+/* Hide default cursor on desktop */
+@media (min-width: 769px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+}
+
+/* Prevent flashing on hover */
+button,
+a {
+  transition: all 200ms ease;
+}
+
+/* Scroll behavior */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Global Section Styles */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  background: none;
+  color: var(--text-primary);
+  -webkit-text-fill-color: initial;
+}
+
+:root[data-mantine-color-scheme="dark"] .section-title {
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 62em) {
+  .section-title {
+    font-size: 3.5rem !important;
+  }
+}

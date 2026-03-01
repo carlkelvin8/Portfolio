@@ -1,0 +1,85 @@
+.navbar {
+  transition: all 300ms ease;
+  background-color: transparent;
+  padding: 0.5rem 0;
+}
+
+.navbar.scrolled {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+:root[data-mantine-color-scheme="dark"] .navbar.scrolled {
+  background-color: rgba(3, 7, 18, 0.7); /* Deep dark glass */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.logo-text {
+  color: var(--text-primary);
+  background: none;
+  -webkit-text-fill-color: initial;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logo-text:hover {
+  opacity: 0.8;
+}
+
+.nav-links-desktop {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+/* Premium Text Link Style - No background buttons */
+.nav-link button {
+  background: transparent !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover button {
+  color: var(--text-primary) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .nav-link button {
+  color: var(--text-secondary) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .nav-link:hover button {
+  color: var(--mantine-color-white) !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Scrolled State */
+.navbar.scrolled .nav-link button {
+  color: var(--text-secondary) !important;
+}
+
+.navbar.scrolled .nav-link:hover button {
+  color: var(--text-primary) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .navbar.scrolled .nav-link:hover button {
+  color: white !important;
+}
