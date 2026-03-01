@@ -46,10 +46,39 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 600;
   letter-spacing: 0.01em;
+  border: 2px solid transparent;
 }
 
 .filter-button:hover {
   transform: translateY(-2px);
+}
+
+/* Light mode filter buttons */
+.filter-button[data-variant="light"] {
+  background: rgba(20, 184, 166, 0.08) !important;
+  color: #14b8a6 !important;
+  border-color: rgba(20, 184, 166, 0.2) !important;
+}
+
+.filter-button[data-variant="light"]:hover {
+  background: rgba(20, 184, 166, 0.15) !important;
+  border-color: rgba(20, 184, 166, 0.3) !important;
+}
+
+.filter-button[data-variant="filled"] {
+  background: linear-gradient(135deg, #14b8a6, #06b6d4) !important;
+  border-color: transparent !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .filter-button[data-variant="light"] {
+  background: rgba(20, 184, 166, 0.1) !important;
+  color: #5eead4 !important;
+  border-color: rgba(20, 184, 166, 0.25) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .filter-button[data-variant="light"]:hover {
+  background: rgba(20, 184, 166, 0.18) !important;
+  border-color: rgba(20, 184, 166, 0.4) !important;
 }
 
 /* Compact Project Card */
