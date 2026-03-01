@@ -391,12 +391,13 @@
   .hero {
     padding-top: 100px;
     min-height: auto;
+    padding-bottom: 40px;
   }
 
   .hero-content-wrapper {
     flex-direction: column;
     text-align: center;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   
   .hero-text-content {
@@ -418,19 +419,102 @@
   
   .hero-name-primary {
     text-align: center;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    -webkit-text-stroke: 1px rgba(59, 130, 246, 0.4);
+  }
+  
+  .hero-headline-impact {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+  }
+  
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  
+  .hero-content-wrapper {
+    gap: 2rem;
+  }
+  
+  .greeting-badge {
+    font-size: 0.875rem;
+  }
+  
+  .hero-name-primary {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    line-height: 1;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-headline-impact {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-role-subtitle {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .stat-item {
+    padding: 0.75rem 1rem;
+  }
+  
+  .hero-footer {
+    flex-direction: column;
+    gap: 1rem !important;
+    width: 100%;
+  }
+  
+  .availability-signal {
+    justify-content: center;
   }
 }
 
 @media (max-width: 576px) {
   .hero {
     padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  
+  .hero-content-wrapper {
+    gap: 1.5rem;
   }
   
   .profile-image-wrapper {
-    height: 500px;
+    height: 450px;
+    max-width: 350px;
+  }
+  
+  .hero-name-primary {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    -webkit-text-stroke: 0.8px rgba(59, 130, 246, 0.4);
   }
   
   .btn-cta {
     width: 100%;
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+  
+  .btn-primary, .btn-secondary {
+    height: 48px !important;
+  }
+  
+  .hero-stats {
+    gap: 0.75rem !important;
+    width: 100%;
+  }
+  
+  .stat-item {
+    flex: 1;
+    min-width: 140px;
   }
 }

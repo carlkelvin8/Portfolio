@@ -280,8 +280,64 @@
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  .project-image-wrapper-compact {
+    height: 220px;
+  }
+  
+  .filter-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .project-image-wrapper-compact {
     height: 200px;
+  }
+  
+  .project-title-compact {
+    font-size: 1.125rem !important;
+  }
+  
+  .project-card-compact {
+    padding: 1rem !important;
+  }
+  
+  .case-study-compact {
+    padding: 0.625rem;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-image-wrapper-compact {
+    height: 180px;
+  }
+  
+  .project-title-compact {
+    font-size: 1rem !important;
+  }
+  
+  .project-category-badge {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .filter-button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .case-icon-mini {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .details-toggle {
+    font-size: 0.875rem;
   }
 }

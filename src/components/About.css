@@ -274,18 +274,64 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+  .section-header {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .stat-icon-wrapper {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
   
   .stat-number {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
   }
   
   .highlight-icon {
-    width: 56px !important;
-    height: 56px !important;
+    width: 52px !important;
+    height: 52px !important;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .strengths-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .highlight-card {
+    padding: 1.25rem !important;
+  }
+  
+  .stat-card {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .stat-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem !important;
+  }
+  
+  .highlight-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  .highlight-progress {
+    max-width: 150px;
   }
 }

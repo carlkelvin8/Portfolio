@@ -204,6 +204,10 @@
   .calendly-inline-widget {
     height: 600px !important;
   }
+  
+  .contact-info-card {
+    padding: 1.25rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -213,5 +217,43 @@
   
   .calendly-inline-widget {
     height: 550px !important;
+  }
+  
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .calendly-container {
+    padding: 0.75rem;
+  }
+  
+  .calendly-inline-widget {
+    height: 500px !important;
+    min-width: 280px !important;
+  }
+  
+  .contact-info-card {
+    padding: 1rem !important;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icon {
+    width: 44px !important;
+    height: 44px !important;
+  }
+  
+  .section-title {
+    font-size: 1.75rem !important;
   }
 }
